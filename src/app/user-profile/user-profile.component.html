@@ -1,0 +1,19 @@
+<div class="row">
+	<div class="col s8 m5 l3">
+		<div class="card">
+			<div class="card-image">
+				<img [src]="User.photo" [alt]="User.name" />
+			</div>
+			<div class="card-content">
+				<p>Nom: {{User.name}}</p>
+				<p>Prénom: {{User.firstName}}</p>
+				<p *ngIf="clic === true">Âge: {{User.age}} ans</p>
+				<p>{{User.quote}}</p>
+				<input [(ngModel)]="User.quote" placeholder="Quote" />
+			</div>
+			<div class="card-action">
+				<button (click)="showAge()" class="waves-effect wavew-light btn-small" >Afficher/Masquer mon âge</button>
+			</div>
+		</div>
+	</div>
+</div>
