@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { SignUpComponent } from './sign-up/sign-up.component';
-import { UserProfileComponent } from './user-profile/user-profile.component';
+import { MenuComponent } from './menu/menu.component';
 
 @Component({
   selector: 'app-root',
-  template: '<user-profile></user-profile>',
+  template: '<menu></menu>,<router-outlet></router-outlet>',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
