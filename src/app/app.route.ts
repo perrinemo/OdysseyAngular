@@ -6,7 +6,7 @@ const ROUTES: Routes = [
     {
         path: '',
         component: UserProfileComponent
-    }
+    },
     {
         path: 'sign-up',
         component: SignUpComponent
