@@ -8,13 +8,21 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { MenuComponent } from './menu/menu.component';
 import { ROUTES } from './app.route';
+import { MoviesComponent } from './movies/movies.component';
+import { ChangeMovieDirective } from './change-movie.directive';
+import { ShowMoviesDirective } from './show-movies.directive';
+import { CustomListDirective } from './custom-list.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignUpComponent,
     UserProfileComponent,
-    MenuComponent
+    MenuComponent,
+    MoviesComponent,
+    ChangeMovieDirective,
+    ShowMoviesDirective,
+    CustomListDirective
   ],
   imports: [
     BrowserModule,
